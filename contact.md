@@ -14,7 +14,6 @@ title: Contacts
 		<li>E-mail: <a href="mailto:{{ site.social.email }}">gosha20777@live.ru</a></li>
      </ul>
   </div>
-<<<<<<< HEAD
   <form action="http://formspree.io/gosha20777@live.ru" method="POST">
     <label for="name">Name</label>    
     <input type="text" id="name" name="name" class="full-width"><br>
@@ -25,5 +24,3 @@ title: Contacts
     <input type="submit" value="Send" class="button">
   </form>
 </div>
-=======
->>>>>>> origin/master
