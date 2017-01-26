@@ -15,11 +15,6 @@ title: Contacts
 		<li>E-mail: <a href="mailto:{{ site.social.email }}">gosha20777@live.ru</a></li>
   	</ul>
   </div>
-  <form method="POST" action="http://formspree.io/gosha20777@live.ru">
-  	<input name="email" placeholder="Your email" type="email">
-  	<textarea name="message" placeholder="Your message"></textarea>
-  	<button type="submit" class="button">Send</button>
-  </form>
   <!--
   <form action="https://formspree.io/gosha20777@live.ru" method="POST">
     <label for="name">Name</label>    
