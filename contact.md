@@ -1,14 +1,19 @@
 ---
 layout: default
-title: gosha20777 Contacts
+title: Contacts
 ---
 
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
   <div class="contactContent">
-    <p class="intro">This is an example Contact page. If you want to make changes then do so in the <code>contact.html</code> file.</p>
-    <p>The form is provided by <a href="http://formspree.io/">Formspree.</a> Follow the directions on their site to set up the form for use.</p>
-    <p>If you have questions about the theme feel free to <a href="mailto:brimaidesigns@gmail.com">email me</a> or create an issue on <a href="https://github.com/brianmaierjr/long-haul">GitHub</a>. Enjoy!</p>
+    <p class="intro">Если я по какой-то причине вам понадоблюсь, то вот мои координаты:</p>
+    <p></p>
+    <ul>
+		<li>ВКонтакте: <a href="https://vk.com/{{ site.social.vkontakte }}">https://vk.com/goha20777</a></li>
+  		<li>Skype: goha20777</li>
+  		<li>Facebook: <a href="https://www.facebook.com/{{ site.social.facebook }}">https://www.facebook.com/goha20777</a></li>
+		<li>E-mail: <a href="mailto:{{ site.social.email }}">gosha20777@live.ru</a></li>
+  	</ul>
   </div>
   <form action="http://formspree.io/gosha20777@live.ru" method="POST">
     <label for="name">Name</label>    
