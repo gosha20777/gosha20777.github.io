@@ -5,6 +5,7 @@ title: Contacts
 
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
+  <div class="contactContent">
     <p class="intro">Если я по какой-то причине вам понадоблюсь, то вот мои координаты:</p>
     <p></p>
     <ul>
@@ -12,7 +13,7 @@ title: Contacts
   		<li>Skype: goha20777</li>
   		<li>Facebook: <a href="https://www.facebook.com/{{ site.social.facebook }}">https://www.facebook.com/goha20777</a></li>
 		<li>E-mail: <a href="mailto:{{ site.social.email }}">gosha20777@live.ru</a></li>
-     </ul>
+  	</ul>
   </div>
   <form action="http://formspree.io/gosha20777@live.ru" method="POST">
     <label for="name">Name</label>    
