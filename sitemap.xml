@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Файл sitemap.xml динамически создан сайтом https://gensitemap.ru/ 31.01.2017 20:10,
+	всего найдено 5. страниц-->
+	<url>
+		<loc>https://gosha20777.github.io/</loc>
+		<lastmod>2017-01-31T20:10:00+03:00</lastmod>
+		<priority>1</priority>
+		<changefreq>always</changefreq>
+	</url>
+	<url>
+		<loc>https://gosha20777.github.io/1967/01/25/zero-post/</loc>
+		<lastmod>2017-01-31T20:10:00+03:00</lastmod>
+		<priority>0.5</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+	<url>
+		<loc>https://gosha20777.github.io/about/</loc>
+		<lastmod>2017-01-31T20:10:00+03:00</lastmod>
+		<priority>0.5</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+	<url>
+		<loc>https://gosha20777.github.io/blog/github/jekyll/2017/01/28/blog-with-github/</loc>
+		<lastmod>2017-01-31T20:10:00+03:00</lastmod>
+		<priority>0.5</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+	<url>
+		<loc>https://gosha20777.github.io/contact/</loc>
+		<lastmod>2017-01-31T20:10:00+03:00</lastmod>
+		<priority>0.5</priority>
+		<changefreq>hourly</changefreq>
+	</url>
+</urlset>		     		    			    
