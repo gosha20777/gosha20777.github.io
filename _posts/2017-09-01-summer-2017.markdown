@@ -1,0 +1,256 @@
+---
+layout: post
+title:  "Л.Е.Т.О. 2017"
+date:   2017-09-01
+categories: events
+---
+<p class="intro"><span class="dropcap">М</span>ой блог давно не обновлялся. Не было времени, и руки никак не хотели садится за клавиатуру и писать статьи. А за это время произошло много событий. И да, лето было жарким. Ну вот время появилось, и я оживляю свой блог!</p>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_logo.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Лето 2017.</figcaption>
+</figure>
+
+<blockquote>Здесь я напишу отчёт о том, как прошло моё лето. Благо магия позволяет мне перематывать время:-)</blockquote>
+
+### AngelHack 2017.
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_36.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+Моё лето началось с весны… И в конце мая прямо перед сессией это событие «упало» на наши головы. Идея была придумана за 5 минут до начала мероприятия: мы решили написать программу, которая распознает какой-то архитектурный объект и выводит информацию о нем. Как вы, наверное, уже поняли – у нас получилось!
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_40.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Сессия!!!</figcaption>
+</figure>
+
+### KGD-SPB-ARH-SPB-KGD
+
+Закрыв экстренном сессию, я рванул в Петербург к друзьям! Мы хорошо провели время! `Дима`, спасибо за экскурсию по `СПбГУ`)
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_33.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Петергоф</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_34.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Петербург</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_35.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>...</figcaption>
+</figure>
+
+Потом я съездил в родной Архангельск на папу дней. Родительский дом – начало начал. Было очень непривычно там находиться после годового отсутствия. Всё изменилось… 
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_39.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Родной город.</figcaption>
+</figure>
+
+Снова Петербург! Ваня, спасибо что нашёл время и выгулял меня! Калининград и… 
+
+### Территория Смыслов на Клязме 2017.
+
+И это были адские три дня в Калининграде! Ведь далее я уезжал на всероссийский форум `ТС 2017`. А для этого нужно было получить справку <b>У-86</b> которая делается `неделю`. По мимо этого, мне надо было закрыть летнюю практику по Maple. Где я только не выполнял эти задания: в вагонах метро, в самолёте, в автобусе. Спасибо `Болтневу Ю. Ф.` за то, что пошёл мне на встречу и согласился принимать задания удалённо. А и да, оценку я получал прямо на вокзале.
+
+#### И в путь. Поехали!
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_37.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Вперед!</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_38.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>)))</figcaption>
+</figure> 
+
+Пересадка в Москве. Спасибо `Саше` за велосипедную экскурсию, езду по встречке(!) и вкусный кофе)
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_14.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Белорусский вокзал.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_15.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Красная площадь. Мовзалей!</figcaption>
+</figure>
+
+#### Форум.
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_01.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Привет ТС 2017!</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_02.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Тут мы жили.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_03.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Рекурсивное фото.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_04.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Письма...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_05.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Пирс. Мгла.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_06.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Проверка ТС на прочность</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_07.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_08.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Сертификат!</figcaption>
+</figure>
+
+#### Обратно через Владимир… 
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_09.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>/* == <3 == */</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_10.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Какое-то старое здание...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_11.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Собор</figcaption>
+</figure>
+
+А вот этот "Малыш" развивает скорость до 60km/h! Его я и взял, чтобы осмотреть город!
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_12.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>"Малыш".</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_13.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Мост.</figcaption>
+</figure>
+
+### Калининград. 
+
+Потом были почти две недели в Калининграде. Я не терял времени и учил различные вкусные вещи. Вроде теории автоматов, теории графов и пр. Спасибо друзьям из МГТУ им. Н. Э. Баумана за конспекты.
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_16.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>ДКА, НКА, Теорема Клини...</figcaption>
+</figure>
+
+Ну и гулять не забывал.
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_17.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Было гестапо - стало судом:-)</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_18.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Балтийская коса. Море.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_25.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Балтийская коса. Аэродром.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_19.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_20.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>S.T.A.L.K.E.R.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_21.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_22.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Немецкие укрепления.</figcaption>
+</figure>
+
+Подземелий и казематов в Калининграде много. Может быть как-небудь выпущу отдельную статью...
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_23.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Подземелья.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_24.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Вид на "дом советов" с одной из крыш домов. Привет лифтеру Джону!</figcaption>
+</figure>
+
+### КРЫМ НАШ!
+
+А потом были две недели в Крыму. Море солнце, звезды на небе и… Код) Всё-таки приходилось брать в руки ноутбук и програть разные штуки. Валя, спасибо за то, что рещилась на отчаянный шаг и поехала с нами!
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_26.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Вид на бухту Гурзуфа.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_27.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Узкие крымские улочки.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_28.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>)))</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_29.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_30.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Херсонес.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_31.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2017_09_01_32.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+### P.s.
+
+Это ле было действительно жарким, трудным но незабываемым. Спасибо тем, чьи имена не прозвучали здесь, кто помогал мне и поддерживал меня. А также спасибо моей семье, ведь многие из этих поездок были спонтанными и даже я сам не знал куда поеду в следующин три дня. Спасибо за терпение!
