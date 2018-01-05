@@ -30,7 +30,7 @@ categories: tutorial
 Запускаем ***Server Manager*** (диспетчер серверов) -> ***Manage*** (Управление) -> Add Roles and Features (Добавить роли и компоненты) …
 
 <figure>
-	<img src="{{ '/assets/img/posts/2018_01_05_01.JPG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/posts/2018_01_05_01.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption>да да у меня виндосервер на русском...</figcaption>
 </figure>
 
@@ -39,14 +39,14 @@ categories: tutorial
 Далее выбираем наш сервер
 
 <figure>
-	<img src="{{ '/assets/img/posts/2018_01_05_02.JPG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/posts/2018_01_05_02.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption>...</figcaption>
 </figure>
 
 В ролях выбираем ***Web Server (IIS)***.
 
 <figure>
-	<img src="{{ '/assets/img/posts/2018_01_05_03.JPG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/posts/2018_01_05_03.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption>...</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ WAS-ConfigurationAPI
 В настройках можно указать другой путь для хранения файлов, изменить язык и вообще сделать много полезного)
 
 <figure>
-	<img src="{{ '/assets/img/posts/2018_01_05_04.JPG' | prepend: site.baseurl }}" alt=""> 
+	<img src="{{ '/assets/img/posts/2018_01_05_04.png' | prepend: site.baseurl }}" alt=""> 
 	<figcaption></figcaption>
 </figure>
 
