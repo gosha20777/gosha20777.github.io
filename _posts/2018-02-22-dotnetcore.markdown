@@ -45,26 +45,26 @@ category: Code
  
 Для начала создадим и запустим консольное приложение **Hello World** (я буду использовать `PowerShell` для Windows, но в `Bash` для macOS или Linux все делается аналогично).
 
-```
+{% highlight bash %}
 $ dotnet new console -o hello
 $ cd hello
 $ dotnet run
 Hello World!
-```
+{% endhighlight %}
 
 Команда `dotnet new` делает то же самое, что элемент меню *File – New Project* в Visual Studio. С её помощью можно создавать проекты различных типов. Используйте команду `dotnet new`, чтобы вывести список предустановленных шаблонов.
 
 Давайте переместим часть логики в *библиотеку классов*. Для этого в дополнение к проекту `hello` создадим проект библиотеки классов.
 
-```
+{% highlight bash %}
 $ cd ..
 $ dotnet new library -o logic
 $ cd logic
-```
+{% endhighlight %}
 
 Здесь мы хотим описать логику, которая будет формировать сообщение Hello World. Поэтому изменим содержимое файла `Class1.cs` на следующее:
 
-```
+{% highlight csharp %}
 namespace logic
 {
   public static class HelloWorld
@@ -72,23 +72,23 @@ namespace logic
       public static string GetMessage(string name) => $"Hello {name}!";
   }
 }
-```
+{% endhighlight %}
   
 Переименуем файл `Class1.cs` в `HelloWorld.cs`.
 
-```
+{% highlight bash %}
 $ mv Class1.cs HelloWorld.cs
-```
+{% endhighlight %}
   
 Обратите внимание: обновлять файл проекта, чтобы отразить это изменение, не нужно. Новые файлы проекта в .NET Core уже включают все исходные файлы из каталога проекта. Поэтому при добавлении, удалении и переименовании файлов изменять проект больше не нужно. Это очень упрощает работу в командной строке.
 
 Чтобы использовать класс `HelloWorld`, нужно добавить в приложение **hello** `ссылку` на библиотеку, в которой содержится логика. Для этого можно изменить файл проекта или воспользоваться командой `dotnet add reference`.  
   
 
-```
+{% highlight bash %}
 $ cd ../hello
 $ dotnet add reference ../logic/logic.csproj
-```
+{% endhighlight %}
 
   
 Теперь изменим файл `Program.cs` так, чтобы в нем использовался класс `HelloWorld`.  
@@ -96,7 +96,7 @@ $ dotnet add reference ../logic/logic.csproj
 **Обновление файла Program.cs для дальнейшего использования класса HelloWorld**:  
   
 
-```
+{% highlight csharp %}
 using System;
 using logic;
 namespace hello
@@ -112,29 +112,27 @@ namespace hello
 		}
 	}
 }
-
-```
+{% endhighlight %}
 
   
 Чтобы собрать и запустить приложение, введите команду `dotnet run`.  
-  
 
-```
+{% highlight bash %}
 $ dotnet run
 What's your name: Immo
 Hello Immo!
-```
+{% endhighlight %}
 
   
 В командной строке также можно создавать *тесты*. Этот CLI поддерживает `MSTest`, а также популярную платформу `xUnit`. Давайте для примера воспользуемся xUnit.  
   
 
-```
+{% highlight bash %}
 $ cd ..
 $ dotnet new xunit -o tests
 $ cd tests
 $ dotnet add reference ../logic/logic.csproj
-```
+{% endhighlight %}
 
   
 Чтобы добавить тест, измените содержимое файла `UnitTest1.cs`, как показано ниже.  
@@ -142,7 +140,7 @@ $ dotnet add reference ../logic/logic.csproj
 **Добавление теста в файл UnitTest1.cs**:  
   
 
-```
+{% highlight csharp %}
 using System;
 using Xunit;
 using logic;
@@ -159,58 +157,56 @@ namespace tests
 		}
 	}
 }
-```
+{% endhighlight %}
 
 Теперь можно запустить тесты с помощью команды `dotnet test`.
 
-```
+{% highlight bash %}
 $ dotnet test
 Total tests: 1. Passed: 1. Failed: 0. Skipped: 0.
 Test Run Successful.
-```
+{% endhighlight %}
+
 #### Пример 2
 
 Рассмотрим более интересный пример: *создадим простой `веб-сайт` ASP.NET Core*.
 
-```
+{% highlight bash %}
 $ cd ..
 $ dotnet new web -o web
 $ cd web
 $ dotnet add reference ../logic/logic.csproj
-```
+{% endhighlight %}
+
 
   
 Измените вызов `app.Run` в файле *Startup.cs* так, чтобы в нём использовался класс `HelloWorld`.  
   
-
-```
+{% highlight csharp %}
 app.Run(async (context) =>
 {
   var name = Environment.UserName;
   var message = logic.HelloWorld.GetMessage(name);
   await context.Response.WriteAsync(message);
 });
-```
-
+{% endhighlight %}
   
 Чтобы запустить тестовый веб-сервер, вновь введите команду `dotnet run`.  
   
-
-```
+{% highlight bash %}
 $ dotnet run
 Hosting environment: Production
 Now listening on: http://localhost:5000
 Application started. Press Ctrl+C to shut down.
-```
+{% endhighlight %}
 
-  
 Откройте в браузере URL-адрес, который был выведен в консоли (это должен быть адрес [localhost](http://localhost):5000).  
   
 Сейчас структура вашего проекта должна соответствовать вот такой структуре.  
   
 **Структура созданного проекта**:  
 
-```
+{% highlight ruby %}
 $ tree /f
 │
 ├───hello
@@ -229,17 +225,16 @@ $ tree /f
 Program.cs
 Startup.cs
 web.csproj
-```
+{% endhighlight %}
 
-  
 Чтобы упростить редактирование файлов в Visual Studio, создадим файл решения `*.SIN` и добавим в него все проекты.  
   
 
-```
+{% highlight bash %}
 $ cd ..
 $ dotnet new sln -n HelloWorld
 $ ls -fi *.csproj -rec | % { dotnet sln add $_.FullName }
-```
+{% endhighlight %}
 
 Как видите, **.NET Core CLI** — мощный и удобный инструмент, который покажется привычным даже тем разработчикам, которые никогда раньше не работали с .NET.   
   
@@ -258,9 +253,7 @@ $ ls -fi *.csproj -rec | % { dotnet sln add $_.FullName }
 | .NET Standard | любая | Да | Создание библиотек, которые можно использовать в любых реализациях .NET, в том числе .NET Framework, .NET Core и Xamarin. |
 
 
-
 Создание библиотек, которые можно использовать в любых реализациях .NET, в том числе .NET Framework, .NET Core и Xamarin.
-
   
 В такой среде поддержка общего кода становится сложной задачей. Нужно понять, какие API доступны, и убедиться, что общие компоненты работают только с теми API, которые поддерживаются во всех используемых реализациях .NET.  
   
@@ -278,7 +271,7 @@ $ ls -fi *.csproj -rec | % { dotnet sln add $_.FullName }
 
 Вероятно, вы уже задаетесь вопросом, как можно пользоваться `.NET Standard`. На самом деле мы им уже воспользовались, когда создавали библиотеку с классом логики. Давайте взглянем на файл проекта внимательнее.  
 
-```
+{% highlight bash %}
 $ cd logic
 $ cat logic.csproj
 <Project Sdk="Microsoft.NET.Sdk">
@@ -286,11 +279,12 @@ $ cat logic.csproj
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-```
+{% endhighlight %}
+
   
 Сравним его с файлом проекта консольного приложения hello.
 
-```
+{% highlight bash %}
 $ cd ..\hello
 $ cat hello.csproj
 <Project Sdk="Microsoft.NET.Sdk">
@@ -305,7 +299,8 @@ $ cat hello.csproj
   </PropertyGroup>
 
 </Project>
-```
+{% endhighlight %}
+
 
 Как видите, для параметра `TargetFramework` библиотеки логики задано значение `netstandard2.0`, а для соответствующего параметра консольного приложения — значение `netcoreapp2.0`. Параметр `TargetFramework` соответствует целевой версии реализации .NET. Таким образом, целевая реализация для консольного приложения — *.NET Core 2.0*, а для библиотеки — *.NET Standard 2.0*. Это значит, что к библиотеке логики можно обращаться не только из приложения .NET Core, но и из приложения для .NET Framework или Xamarin.
 
@@ -324,15 +319,16 @@ $ cat hello.csproj
 Давайте посмотрим, как это работает. В моем примере мы использовали популярную библиотеку коллекций `PowerCollections`, которая была создана в *2007* году (верните мне мой 2007-ой). Она долго не обновлялась, и в качестве целевой платформы для нее по-прежнему указана **.NET Framework 2.0(!)**. Добавим ее через NuGet в приложение `hello`.  
   
 
-```
+{% highlight bash %}
 $ dotnet add package Huitian.PowerCollections
-```
+{% endhighlight %}
 
   
 Эта библиотека поддерживает дополнительные типы коллекций, которых *нет в BCL*. Один из них — тип `Bag`, не гарантирующий какого-либо порядка элементов. Изменим наше приложение `hello` так, чтобы в нем использовался этот тип.  
   
 **Пример приложения с использованием PowerCollections**:  
-```
+
+{% highlight csharp %}
 using System;
 using Wintellect.PowerCollections;
 namespace hello
@@ -348,27 +344,29 @@ namespace hello
 		}
 	}
 }
-```
+{% endhighlight %}
+
   
 Если вы запустите программу, то увидите следующее:  
 
-```
+{% highlight bash %}
 $ dotnet run
 hello.csproj : warning NU1701: Package 'Huitian.PowerCollections 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This may cause compatibility problems.
 1
 3
 2
-```
+{% endhighlight %}
+
 Компилятор выкинул `warning` но **программа отработала**!
 
 Что же произошло? Целевой реализацией для приложения `hello`является платформа *.NET Core 2.0*. .NET Core 2.0 является одной из реализаций .NET Standard 2.0, поэтому она поддерживает *режим совместимости* для обращения к библиотекам .NET Framework. Однако некоторые библиотеки .NET Framework в определенных реализациях .NET работать не будут. Например, это библиотеки, в которых используются `API Windows Forms` или `WPF`. NuGet не может об этом знать, поэтому он *выдает сообщение с предупреждением о возможных проблемах*.
 
 Конечно, неустранимые предупреждения, которые выводятся при каждой сборке, очень *раздражают* (а точнее БЕСЯТ!). Поэтому после проверки приложения вы можете `отключить` предупреждение, связанное с конкретным пакетом. Наше приложение работает правильно (корректно выводит содержимое созданной коллекции типа `Bag`), поэтому сейчас мы отключим это сообщение. Для этого изменим файл *hello.csproj* и добавим атрибут `NoWarn` в ссылку на пакет.  
 
-```
+{% highlight xml %}
 <PackageReference Include="Huitian.PowerCollections" Version="1.0.0" 
   NoWarn="NU1701" />
-```
+{% endhighlight %}
   
 Если вы снова запустите приложение, предупреждения уже не будет. Однако, если вы установите другой пакет, в котором используется режим совместимости, появятся новые предупреждения. При необходимости их тоже можно будет отключить.  
 
