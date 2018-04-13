@@ -27,26 +27,16 @@ category: Code
 Одной из таких функций являются `тэг-хелперы` (tag helper), которые позволяют более органично соединять синтаксис `html` с кодом **С#**. Да, в отличии от ASP.NET хтмл фойлы тепеть хранятся в новом формате **CSHTML**. Признаюсь, когда я впервые увидел tag helper-ы с их `@` и `{` - у меня потекла кровь из глаз. почему-то сразу вспомнился `qBASIC`, `1С`, `template-ы в крестах` и `GOTO` *(Никогда не пишите на qBASIC)))*. Но после пары часов я понял, что это в прицепе помогает (хотя нет, это ужасно и я стараюсь их избегать). И напоследок, для обработки запросов теперь используется новый конвейер HTTP, который основан на компонентах `Katana` и спецификации `OWIN`. А его модульность позволяет легко добавить свои собственные компоненты. Да, web-api стало писать намного удобнее.
 
 Резюмируя, можно выделить следующие ключевые отличия ASP.NET Core от предыдущих версий ASP.NET:
--   Новый легковесный и модульный конвейер HTTP-запросов
-    
--   Возможность развертывать приложение как на IIS, так и в рамках своего собственного процесса
-    
--   Использование платформы .NET Core и ее функциональности
-    
--   Распространение пакетов платформы через NuGet
-    
--   Интегрированная поддержка для создания и использования пакетов NuGet
-    
--   Единый стек веб-разработки, сочетающий Web UI и Web API
-    
--   Конфигурация для упрощенного использования в облаке
-    
+-   Новый легковесный и модульный конвейер HTTP-запросов   
+-   Возможность развертывать приложение как на IIS, так и в рамках своего собственного процесса  
+-   Использование платформы .NET Core и ее функциональности  
+-   Распространение пакетов платформы через NuGet  
+-   Интегрированная поддержка для создания и использования пакетов NuGet   
+-   Единый стек веб-разработки, сочетающий Web UI и Web API  
+-   Конфигурация для упрощенного использования в облаке 
 -   Встроенная поддержка для внедрения зависимостей
-    
 -   Расширяемость
-    
 -   Кроссплатформенность: возможность разработки и развертывания приложений ASP.NET на Windows, Mac и Linux
-    
 -   Развитие как open source, открытость к изменениям
 
 ### Паттерн MVC и с чем его едят.
@@ -124,7 +114,7 @@ category: Code
 
 Первым делом переименуем `ValuesController.cs` в `MessageController`, и *выпилим* оттуда все. Оставим пустой класс с обработкой `GET`-запроса:
 
-```CSharp
+{% highlight csharp %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -146,7 +136,7 @@ namespace TelegrammAspMvcDotNetCoreBot.Controllers
         }
     }
 }
-```
+{% endhighlight %}
 Запустим нашу прилку и перейдем по ссылке `localhost:XXXX/api/message/update`. Получили результат *Method GET unuvalable* (ура мы крутые прогеры!).
 
 Теперь подкл
@@ -158,7 +148,7 @@ namespace TelegrammAspMvcDotNetCoreBot.Controllers
 
 У бота есть несколько параметров конфигурации: токен, имя, и url сайта, где он лежит. Значит это настройки бота. и их можно описать в отдельном классе. Создадим папку Models а в ней класс AppSettings.cs:
 
-```CSharp
+{% highlight csharp %}
 namespace TelegrammAspMvcDotNetCoreBot.Models
 {
     public static class AppSettings
@@ -168,12 +158,12 @@ namespace TelegrammAspMvcDotNetCoreBot.Models
         public static string Key { get; set; } = "<BOT_KEY>";
     }
 }
-```
+{% endhighlight %}
 
 Отлично! Теперь опишем бота? Подождите. Бот такая сущность которая должна содержать команды и выполнять их. А значит нам нудны еще эти самые команды. Как должна выглядеть команда? Каждая команда как-то называется, значит содержит свойство Name. Команда должна определять вызвали ее или нет: содержать булеву функцию `Contains(...)`. И уметь выполнять себя - `Execute(...)`. И последнее: команд может быть много, значит нужен какой то абстрактный класс.
 
 Теперь создадим папку Commands внутри папки Models и запихнем туда класс Command.cs:
-```CSharp
+{% highlight csharp %}
 using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -189,14 +179,14 @@ namespace TelegrammAspMvcDotNetCoreBot.Models.Commands
         public abstract bool Contains(Message message);
     }
 }
-```
+{% endhighlight %}
 Здесь Execute возвращает не void, а Task, так как команда может выполняться и асинхронно.
 
 Ну что же, пришла пора писать бота. Любой телеграм бот должен содержать клиента TelegramBotClient, а также наш бот должен содержать команды. Их будет много, а значит нам нужна их коллекция. К томуже бот должен уметь возвращать TelegramBotClient-а для вызова его из команд. 
 
 Создаем класс Bot.cs:
 
-```CSharp
+{% highlight csharp %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -231,12 +221,12 @@ namespace TelegrammAspMvcDotNetCoreBot.Models
         }
     }
 }
-```
+{% endhighlight %}
 Я думаю, комментарии излишни.
 
 Теперь научим его приветствовать нас. Добавим класс StartCommand.cs:
 
-```CSharp
+{% highlight csharp %}
 using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -262,22 +252,22 @@ namespace TelegrammAspMvcDotNetCoreBot.Models.Commands
         }
     }
 }
-```
+{% endhighlight %}
 
 Осталось сконфигурировать бота, и сказать нашему приложению, что бот у нас есть.
 Идем в класс Startup и в методе Configure приписываем в конец:
 
-```CSharp
+{% highlight csharp %}
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
 	...
     //Bot Configurations
     Bot.GetBotClientAsync().Wait();
 }
-```
+{% endhighlight %}
 
 Финальный аккорд. Добавим клея!
-```CSharp
+{% highlight csharp %}
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Telegram.Bot.Types;
@@ -315,7 +305,7 @@ namespace TelegrammAspMvcDotNetCoreBot.Controllers
         }
     }
 }
-```
+{% endhighlight %}
 Теперь наш контроллер научился обрабатывать сообщения из телеги.
 Осталось только залить это дело на сервер, и получить ключ от botFather.
 
