@@ -1,0 +1,163 @@
+---
+layout: post
+title:  "Лкто 2018"
+date:   2018-09-01
+categories: events
+---
+
+<p class="intro"><span class="dropcap">Н</span>у вот и закончилось лето <b>2018</b> года. На дворе 1 сентября <i>(ой нет уже второе).</i> А значит время подводить какие-то итоги.</p>
+
+Если вкратце, то за это лето я *2 дня пробыл на море*, и один день на платине. Это было незабываемо. Больше спасибо `Андрею` за сладкий **арбуз** на пляже и хорошее настроение!
+
+Все же остальное время я уделял работе и учёбе. Да я окончательно скатился в `Data Science`, и неоднократно изменял `C#`. Теперь в моём коде все чаще встречается *Змейка*. А ещё… Ещё я переехал в Москву и сменил шарагу *(теперь я снова тупой первак. Не знаю радоваться мне или плакать, но все что не делается все к лучшему)*. Ну я думаю, что фото расскажут все сами за себя. Погнали!
+
+### A! ALTO UNIVERSITY, HELSINKI
+
+Из всех моих мероприятий, конференций и хакатонов - этот был самый большой. Это пожалуй самый большой хакатон в моей жизни. **72ч** кода! И масса эмоций! Я хотел бы написать про него отдельную статью но время... (Почему в сутках 24 часа?) По этому фото расскажут сами за себя. Хочу сказать спасибо `Эссей`, `Лиде`, `Мартину`, `Лиле`, `Сергею` и `Саше`. Мы были большой дружной командой! Это было здорово! *Lida, Essei, Martin, you where good team members thank you so much!*
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_01.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Заселение в общаги</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_02.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>A! ALTO снаружи</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_03.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>A! ALTO внутри. Вот такие тут двери в аудитории....</figcaption>
+</figure>
+
+
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_03_1.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>А вот и сами аудитории</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_04.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Работа кепит</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_05.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Наш уютный воркспейс...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_06.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Хельсинки</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_07.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_08.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Красота...</figcaption>
+</figure>
+
+### Санкт-Петербург я прикован к тебе… 
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_13.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+В этом году я особенно часто ездил в этот *прекрасный* город! Больше спасибо моим друзьям (и не только): `Настя`, `Юля`, `Ваня`, `Саша`, `Ира`, `Никита А.`, `Никита И.`, `Колян`, `Антон`…! Всем тем кто помогал мне и просто находил время, чтобы встретиться. **Серёжа ты лучший!** `Александра Филенко` – тебе отдельный привет! *Димас - тебе респект!* Это были незабываемые ночи за мафией! Алые Паруса и ЧМ *пицца со школьниками в 4 утра*. Было круто.
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_09.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Эрарта... Учитывая всю периодичность, пора годовой покупать.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_10.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Спасибо фотографу:-)</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_11.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Алые Паруса. Стали уже маленькой традицией. Обязательно приеду еще раз!</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_12.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Красота...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_14.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_15.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_16.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption></figcaption>
+</figure>
+
+### Пока БФУ привет МАИ! 
+
+Я сменил вуз. Эх... после *5й неудачной* попытки перевода из БФУ в СПб/Мск *(да, я делал это после каждой сессии),* я решил изменить все радикально! ФСБ не моё. Сдав сессию экстренном, я пришёл в деканат и `отчислился`. Хочу выразить свою благодарность преподавателю Линейной Алгебры – *Скрыдловой Елене Викторовне*. В моей профессиональной деятельности ваш курс очень помог мне. Хочу пожелать вам здоровья и долгих лет жизни.
+
+В любом случае я приобрёл некоторый опыт и впредь надеюсь, что доучусь до конца. *Что же, время покажет.*
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_17.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Было...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_18.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Стало!</figcaption>
+</figure>
+
+### Ну здравствуй, Москва!
+
+А Москва меня встретила *шумными проспектами*, *извилистыми улицами*, *скверами*, *парками*, *яркой весной,* *жарким летом* и невероятно **интересной работой**. `Даниловская Мануфактура` стала вторым домом. Выражаю благодарность *всему коллективу* за приятную и `ламповую` обстановку и бессонные ночи. Хочу, чтобы подобный настрой сохранялся и дальше. Спасибо `Ане` за сухофрукты и кофе, ты правда спасаешь нас! Также хочу выразить благодарность `Александру Мешкову`. Саша, ты моя правая рука, спасибо тебе! 
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_19.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>м. Севастопольская. Случайная девушка.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_20.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>На московских изогнутых улицах...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_21.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Цой жив!</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_22.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Москва сквозь окуляр бинокля.</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_23.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>...</figcaption>
+</figure>
+
+<figure>
+	<img src="{{ '/assets/img/posts/2018_09_01_24.jpg' | prepend: site.baseurl }}" alt=""> 
+	<figcaption>Ставим рекорды на Python)))</figcaption>
+</figure>
+
+### А напоследок я скажу…
+
+А напоследок я хочу сказать больше спасибо всей моей большой семье и в особенности **маме**. Вы были рядом в трудные минуты.
+
+И ещё почему-то хочется сказать спасибо моему первому преподавателю информатики `(АГЛ им. М. В. Ломоносова, Архангельск)` – *Пахальчук Анатолию Васильевичу*. Может быть потому что случайно наткнулся на лицейский альбом?...
