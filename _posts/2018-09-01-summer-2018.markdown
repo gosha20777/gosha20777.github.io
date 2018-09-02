@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Лкто 2018"
+title:  "Лето 2018"
 date:   2018-09-01
 categories: events
 ---
