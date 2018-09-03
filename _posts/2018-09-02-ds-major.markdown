@@ -55,6 +55,8 @@ category: event
 
 ### Дополнительная литература
 
+* <a href="https://youtu.be/sZnFbu0F7YI">Видиозапись Атриум</a>
+* <a href="https://youtu.be/pjhV3r6RbDo">Видиозапись 1 переговорка</a>
 * <a href="http://ods.ai/">Официальный сайт Open Data Science</a>
 * <a href="https://habr.com/company/ods/">ODS на хабре</a>
 * <a href="https://vk.com/mlcourse">Курс по ML (группа ВК)</a>
