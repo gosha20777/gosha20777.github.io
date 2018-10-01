@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Тульская находка или IBM Model M. Часть 1."
-date:   2018-09-03
+date:   2018-10-01
 category: event
 ---
 
