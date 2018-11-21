@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Объясняемся на .NET Core 2.1"
+title:  "Обновляемся на .NET Core 2.1"
 date:   2018-10-22
 category: event
 ---
