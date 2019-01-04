@@ -16,6 +16,8 @@ navigation:
    url: /about
  - title: Contact
    url: /contact
+ - title: Search
+   url: /search
 
 social:
    github: gosha20777
