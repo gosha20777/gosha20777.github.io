@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rescuer-la: Невероятный C# или avalonia UI в действии"
-date:   2019-01-05
+date:   2019-05-24
 category: dotnet
 ---
 <p class="intro"><span class="dropcap">В</span>от уже пол года я в свободное время занимаюсь <i>не коммерческим open source</i> проектом <a href="https://github.com/gosha20777/rescuer-la">rescuer-la</a> для не коммерческой организации <b>Лиза Алерт</b>. Суть этого проекта – использовать нейроные сети и ML для распознавания потерявшихся в лесу людей по фотографиям получаемым с дронов. О самом проекте в общем я уже <a href="https://vk.com/away.php?to=https%3A%2F%2Fyoutu.be%2FRQrjbAUoPNk%3Ft%3D6270&post=84719544_1061&cc_key=">рассказывал</a> на конференции Data Fest 6. Вероятно я ещё напишу статью о нем позже.</p>
