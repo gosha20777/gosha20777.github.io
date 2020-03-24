@@ -212,5 +212,5 @@ Linux в 2020 году это прекрасная, стабильная и от
 
 Напоследок я бы хотел порекомендовать один хороший фильм о Linux и о явлении Open Source:
 
-- ОперационнаяОпрерационная система грядущей революции - [https://youtu.be/n1F_MfLRlX0](https://youtu.be/n1F_MfLRlX0)
+- [Опрерационная система грядущей революции](https://youtu.be/n1F_MfLRlX0) - [https://youtu.be/n1F_MfLRlX0](https://youtu.be/n1F_MfLRlX0)
 
