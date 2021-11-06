@@ -1,9 +1,12 @@
 ---
+
 layout: post
 title:  "Система плагинов: как завезти нейронные сети в dotnet"
-date:   2020-03-22
+date:   2021-01-29
 category: tutorial
+
 ---
+
 <p class="intro"><span class="dropcap">Э</span>та статья о том как запихать нейронную сеть в каждый компьютер или смартфон используя dotnet, С++, плагины и немного магии!</p>
 
 Вот уже несколько лет я занимаюсь тем что в свободное время веду Open Source проект [Lacmus](https://ods.ai/projects/lacmus) цель которого помогать добровольным поисково-спасательным отрядом и мчс находить пропавших в лесу людей с помощью компьютерного зрения и нейронных сетей. Подробнее об этом можно почитать в нашей [статье на Хабре](https://habr.com/ru/company/ods/blog/483616/) или посмотреть [документальны ролик](https://youtu.be/4QfOBTHEgJU).
@@ -13,8 +16,8 @@ category: tutorial
 Одним из наших продуктов является кросс платформенное приложение написанное на [dotnet core](https://dotnet.microsoft.com/download) и [AvaloniaUI](https://avaloniaui.net/) работающее на Windows / Linux / MacOS. Наша главная цель обеспечить возможность запуска и работы приложения на максимальном количестве устройств с максимально возможной производительностью - ведь от скорости обработки данных может зависть жизнь пропавшего бедолаги. Во многом по этому в качестве фреймверка отрисовки интерфейса был выбран Avalonia UI - ведь он *быстрый*, требует *мало ресурсов* и способен запускаться на *любых устройствах*: от Windows компьютеров до RaspberyPI с Arch Linux на борту. А еще на нем можно рисовать красивый UI.
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_01.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Рисовал так красиво как умею:-)))</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_01.png' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Рисовал так красиво как умею:-)))</figcaption>
 </figure>
 
 Приложение состоит из 2 частей:
@@ -38,11 +41,13 @@ category: tutorial
 - После запуска контейнера с нейронной сетью приложение узнавало его порт на localhost-е и начинала отправлять на локальный сервер http запросы с картинками, а в ответ получала результаты работы нейронной сети.
 
 У такого подхода есть очевидные достоинства:
+
 1. Конечно это *простота разработки и внедрения*. Закинул все что надо в контейнер, вбил заветные `docker build` и `docker pull` в терминале и вот твоя новая модель уже доступна всем пользователям.
 2. Отвязанность от языка программирования и ML фреймверков. В докер можно закинуть все что угодно. Ты кодишь на С++ и нависал инференс своего алгоритма на нем - не вопрос. Закодил сервер на python - пожалуйста. NodeJs + TensorflowJS на худой конец? даже эта штука заведется)
 3. Также docker regestry - удобный способ хранения и версионирования контейнеров.
 
 Но за эти удобства приходится *платить*:
+
 1. Производительность в Windows/OSX. Докер хорошо и нативно работает только на Linux. Тут все процессы запускаются *без виртуализации*, а значит нет просадок по производительности. Но к сожалению на других ОС это не так: там докер это обычная *виртуальная машина с linux*, на которой уже запущен докер со всеми вытекающими. Даже на близких к linux - OSX и BSD системах нативной поддержки docker нет и это тоже виртуалка.
 2. Второй пункт вытекает из первого. На всех системах кроме linux невозможно (или очень сложно) пробросить в docker периферийные устройства - будь то USB с тензорным сопроцессором (intel mividius, google edge tpu) или PCI-E устройство.
 3. Относительная сложность установки docker на не Linux системы. Это в linux есть пакетные менеджеры и можно прописать docker в зависимости своего приложения. При установке пакетный менеджер сам скачает и установит нужные зависимости. А вот в windows и MacOS по умолчанию этого не предусмотрено => задача установки docker ложится на *плечи пользователя*, что может вызвать трудности у некоторых людей.
@@ -60,8 +65,8 @@ category: tutorial
 #### 0. Железо и операционные системы
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_02.jpeg' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Тут мы кодим просто по фану. Как поется в однной песне: fuck капитал! Go open source!</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_02.jpeg' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Тут мы кодим просто по фану. Как поется в однной песне: fuck капитал! Go open source!</figcaption>
 </figure>
 
 Несмотря на то что мир компьютерной техники стал более-менее стандартизованным по сравнению с тем что было 15-20 лет назад - количество платформ все еще остается довольно большим. Давайте рассмотрим современные актуальные платформы под которые и будем писать свой нативный [C++](http://lurkmore.to/C%2B%2B) код.
@@ -88,8 +93,8 @@ category: tutorial
 С помощью нехитрых математических расчетов и здравого смысла можно легко актуализировать количество поддерживаемых нужных нам платформ:
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_03.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Почему так много?</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_03.png' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Почему так много?</figcaption>
 </figure>
 
 Как видно из схемы различных конфигураций платформ довольно много. По этому для уменьшения количества информации в этой статье мы рассмотрим только 64-bit системы и только CPU и GPU. Ну что же, давайте карабкаться выше. 
@@ -108,8 +113,8 @@ category: tutorial
 Протестировав производительность и выбрав оптимальные я пришел вот к таким результатам:
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_04.png' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Больше деревьев богу деревьев!</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_04.png' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Больше деревьев богу деревьев!</figcaption>
 </figure>
 
 #### 2. Высокоуровневые ML фреймверки и библиотеки
@@ -117,8 +122,8 @@ category: tutorial
 За сравнительно малое время существования ml как отрасли возникло и умерло много фреймверков. На данный момент актуальными и самыми популярными фреймверками глубокого обучения являются **PyTorch** и **Tensorflow**. У каждого из них есть свои фанаты и противники.
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_05.jpg' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>За tf! Долой динамические графы!</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_05.jpg' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>За tf! Долой динамические графы!</figcaption>
 </figure>
 
 Помимо фреймверков для разработки нейронных сетей (PyTorch и Tensorflow) есть библиотеки для инференса (запуска) уже готовых, обученыx моделей. Одни из них является **OnnxRuntime**. Его разрабатывает и поддерживает Microsoft.
@@ -160,8 +165,8 @@ category: tutorial
 Примечание - сборка tensorflow это довольно трудоемкий процесс и по сложности он сопоставим наверно со сборкой linux из source кода. Только компиляция занимает 5-8 часов. Самым сложным была сборка под windows с ее отвратительным microsoft C++ компилятором... OnnxRuntime собирается легче и быстрее. В общей сложности на сборку и фикс ошибок всего у меня ушли почти все новогодние праздники)))
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_06.jpg' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Бу!</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_06.jpg' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Бу!</figcaption>
 </figure>
 
 **Интеграция в C#**
@@ -226,6 +231,7 @@ namespace LacmusBasePlugin
             return $"{Api}.{Major}.{Minor}";
         }
     }
+
 }
 {% endhighlight %}
 
@@ -322,6 +328,7 @@ namespace LacmusBasePlugin
         <ExcludeAssets>runtime</ExcludeAssets>
       </ProjectReference>
     </ItemGroup>
+
 </Project>
 {% endhighlight %}
 
@@ -407,7 +414,7 @@ namespace LacmusRetinanetPlugin
         {
             tf.compat.v1.disable_eager_execution();
             _graph = new Graph();
-            
+    
             //try to load pb graph from embedded resources
             var assembly = Assembly.GetExecutingAssembly();
             using (var stream = assembly.GetManifestResourceStream(_pbFile))
@@ -422,7 +429,7 @@ namespace LacmusRetinanetPlugin
                 }
             }
         }
-        
+    
         public IEnumerable<IObject> Infer(string imagePath, int width, int height)
         {
             var startTime = DateTime.Now;
@@ -447,7 +454,7 @@ namespace LacmusRetinanetPlugin
             _graph.Dispose();
             GC.Collect();
         }
-        
+    
         private NDArray PreprocessImage(string imagePath, int width, int height, out float scale)
         {
             scale = ComputeImageScale(width, height);
@@ -504,6 +511,7 @@ namespace LacmusRetinanetPlugin
             return filteredObjects;
         }
     }
+
 }
 {% endhighlight %}
 
@@ -562,8 +570,8 @@ namespace LacmusRetinanetPlugin
 После успешной сборки плагин можно протестировать с помощью консольной утилиты которая находится в том же репозитории.
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_07.jpg' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Вот это я понимаю! Родной консольный интерфейс...</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_07.jpg' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Вот это я понимаю! Родной консольный интерфейс...</figcaption>
 </figure>
 
 ### Что дальше?
@@ -581,7 +589,7 @@ public IEnumerable<IObject> Infer(string imagePath, int width, int height)
         dynamic predictions = plugin.infer(imagePath, width, height);
         foreach(pred in predictions)
         {
-        	...
+            ...
         }
     }
     GC.Collect();
@@ -592,8 +600,8 @@ public IEnumerable<IObject> Infer(string imagePath, int width, int height)
 Вот она дружба народов!
 
 <figure>
-	<img src="{{ '/assets/img/posts/2021_01_29_08.jpg' | prepend: site.baseurl }}" alt=""> 
-	<figcaption>Мир, дружба, жвачка)</figcaption>
+    <img src="{{ '/assets/img/posts/2021_01_29_08.jpg' | prepend: site.baseurl }}" alt=""> 
+    <figcaption>Мир, дружба, жвачка)</figcaption>
 </figure>
 
 #### З.Ы.
