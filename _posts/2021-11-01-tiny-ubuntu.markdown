@@ -61,7 +61,7 @@ category: tutorial
 После установки нас радостно встречает черненькая консоль со входом в систему. Что-же вводим свои данные и попадаем в терминал.
 
 <figure>
-    <img src="{{ '/assets/img/posts/2021_11_07_04.png' | prepend: site.baseurl }}" alt=""> 
+    <img src="{{ '/assets/img/posts/2021_11_07_05.png' | prepend: site.baseurl }}" alt=""> 
     <figcaption>Страшная консоль.</figcaption>
 </figure>
 
